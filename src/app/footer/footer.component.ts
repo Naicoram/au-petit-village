@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  Github:any = "src/img/git.png"
-  Linkedin:any = "src/img/linkedin.png"
-  Instagram:any = "src/img/insta.png"
-  Logo:any = "src/img/Logo.png"
+  Github:any = "assets/git.png"
+  Linkedin:any = "assets/linkedin.png"
+  Instagram:any = "assets/insta.jpg"
 }

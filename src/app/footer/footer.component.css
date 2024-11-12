@@ -1,0 +1,21 @@
+footer{
+    background-color: #FDD90B ;
+}
+
+footer img{
+    display: flex;
+    justify-content: center;
+    width: 3%;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Astérix",
+        "price": 15.0,
+        "description": "description astérix",
+        "img": "assets/astérix-pop.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Obélix",
+        "price": 17.0,
+        "description": "description Obélix",
+        "img": "assets/obélix-pop.jpg"
+    }
+]

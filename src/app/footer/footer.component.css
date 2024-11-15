@@ -1,14 +1,17 @@
 footer{
-    background-color: #FDD90B ;
+    border: 20px solid #FDD90B;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
 }
 
 footer img{
-    display: flex;
-    justify-content: center;
     width: 3%;
     height: auto;
     border-radius: 50%;
-    margin: auto;
+    margin: 2%;
 }
 
 footer img:hover{

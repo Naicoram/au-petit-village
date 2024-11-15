@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2%;
-    background-color: #FDD90B ;
+    border: 20px solid #FDD90B;
 }
 
 header a img{

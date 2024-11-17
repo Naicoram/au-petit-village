@@ -9,16 +9,15 @@ import { ProductComponent } from '../product/product.component';
 })
 export class HomeComponent implements OnInit{
 
-  public product: Product | undefined;
+  public products: Product[] = [];
   public isLoaded: boolean = false;
 
   constructor(private productsService: ProductsService) {
   }
 
   ngOnInit(): void { // implements OnInit
-    const activatedRouteId: number = 1;2;3;
     this.productsService.getAllProducts().subscribe((obtainedProducts: Product[]) => {
-        this.product; obtainedProducts.filter(obtainedProduct => obtainedProduct.id === activatedRouteId);
+        this.products = obtainedProducts;
         this.isLoaded = true;
     });
   }

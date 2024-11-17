@@ -1,2 +1,4 @@
-{{product.name}}
-<img src="{{product.img}}">
+<div *ngIf="isLoaded">
+    {{product?.name}}
+    <img src="{{product?.img}}">
+</div>

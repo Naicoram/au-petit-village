@@ -3,14 +3,14 @@
         "id": 1,
         "name": "Astérix",
         "price": 15.0,
-        "description": "description astérix",
-        "img": "assets/astérix-pop.jpg"
+        "description": "Découvrez cette magnifique figurine d'Astérix, le légendaire guerrier gaulois ! Idéale pour les fans de bandes dessinées et les collectionneurs.",
+        "img": "./assets/asterix-pop.jpg"
     },
     {
         "id": 2,
         "name": "Obélix",
         "price": 17.0,
-        "description": "description Obélix",
-        "img": "assets/obélix-pop.jpg"
+        "description": "Découvrez cette magnifique figurine d'Obélix, le légendaire guerrier gaulois ! Idéale pour les fans de bandes dessinées et les collectionneurs.",
+        "img": "./assets/obelix-pop.jpg"
     }
 ]

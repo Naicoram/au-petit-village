@@ -1,41 +1,26 @@
-<body>
-    <p>Au Petit Village est une entreprise artisanale spécialisée dans la confection de figurines inspirées de l’univers
-        d’Astérix et Obélix.
-        <br><br>
-        Fondée en Bretagne par Pierre Durand, un passionné de sculpture, elle vise à capturer l’humour
-        et l’authenticité des célèbres Gaulois dans des pièces de collection uniques.
-        <br>
-        En s’adressant principalement aux
-        adultes nostalgiques âgés de 30 à 55 ans, Au Petit Village est devenue un symbole de qualité et de fidélité à
-        l’esprit de la bande dessinée.
-        <br><br>
-        Plus qu’un simple atelier, cette entreprise est un hommage vivant à l’héritage
-        culturel et humoristique de la Gaule d’Astérix, qui séduit les fans de tous âges.
-    </p>
-    <div class="catalogue">
-        <div class="product">
-            <img src="./assets/asterix-pop.jpg" alt="Produit 1">
-            <div class="product-info">
-                <div class="product-title">Astérix</div>
-                <div class="product-price">15,00 €</div>
-                <div class="product-description">
-                    Découvrez cette magnifique figurine d'Astérix, le légendaire guerrier gaulois ! Idéale pour les fans
-                    de bandes dessinées et les collectionneurs.
-                </div>
-                <a href="#" class="buy-button">Détails</a>
+<p>Au Petit Village est une entreprise artisanale spécialisée dans la confection de figurines inspirées de l’univers
+    d’Astérix et Obélix.
+    <br><br>
+    Fondée en Bretagne par Pierre Durand, un passionné de sculpture, elle vise à capturer l’humour
+    et l’authenticité des célèbres Gaulois dans des pièces de collection uniques.
+    <br>
+    En s’adressant principalement aux
+    adultes nostalgiques âgés de 30 à 55 ans, Au Petit Village est devenue un symbole de qualité et de fidélité à
+    l’esprit de la bande dessinée.
+    <br><br>
+    Plus qu’un simple atelier, cette entreprise est un hommage vivant à l’héritage
+    culturel et humoristique de la Gaule d’Astérix, qui séduit les fans de tous âges.
+</p>
+<div *ngFor="let product of products" class="catalogue">
+    <div class="product">
+        <img src="{{product.img}}" alt="Image {{product.name}}">
+        <div class="product-info">
+            <div class="product-title">{{product.name}}</div>
+            <div class="product-price">{{product.price.toFixed(2)}}€</div>
+            <div class="product-description">
+                {{product.description}}
             </div>
-        </div>
-        <div class="product">
-            <img src="./assets/obélix-pop.jpg" alt="Produit 2">
-            <div class="product-info">
-                <div class="product-title">Obélix</div>
-                <div class="product-price">17,00 €</div>
-                <div class="product-description">
-                    Découvrez cette magnifique figurine d'Obélix, le légendaire guerrier gaulois ! Idéale pour les fans
-                    de bandes dessinées et les collectionneurs.
-                </div>
-                <a href="#" class="buy-button">Détails</a>
-            </div>
+            <a href="/product?id={{product.id}}" class="buy-button">Détails</a>
         </div>
     </div>
-</body>
+</div>

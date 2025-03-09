@@ -11,6 +11,8 @@
     Plus qu’un simple atelier, cette entreprise est un hommage vivant à l’héritage
     culturel et humoristique de la Gaule d’Astérix, qui séduit les fans de tous âges.
 </p>
+<input type="text" [(ngModel)]="nameSearch" (input)="searchByName()"/>
+<button (click)="sortByPrice()">Trier par prix</button>
 <div *ngFor="let product of products" class="catalogue">
     <div class="product">
         <img src="{{product.img}}" alt="Image {{product.name}}">
@@ -20,7 +22,7 @@
             <div class="product-description">
                 {{product.description}}
             </div>
-            <a href="/product?id={{product.id}}" class="buy-button">Détails</a>
+            <a href="/product/{{product.id}}" class="buy-button">Détails</a>
         </div>
     </div>
 </div>

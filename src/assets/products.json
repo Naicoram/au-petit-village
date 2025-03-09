@@ -12,5 +12,19 @@
         "price": 17.0,
         "description": "Découvrez cette magnifique figurine d'Obélix, le légendaire guerrier gaulois ! Idéale pour les fans de bandes dessinées et les collectionneurs.",
         "img": "./assets/obelix-pop.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Idefix",
+        "price": 10.0,
+        "description": "Découvrez cette magnifique figurine d'Idefix, l'ami du légendaire guerrier gaulois ! Idéale pour les fans de bandes dessinées et les collectionneurs.",
+        "img": "./assets/idefix.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Assurancetourix",
+        "price": 5.90,
+        "description": "Découvrez cette magnifique figurine d'Assurancetourix, le légendaire guerrier gaulois ! Idéale pour les fans de bandes dessinées et les collectionneurs.",
+        "img": "./assets/assurancetourix.jpg"
     }
 ]

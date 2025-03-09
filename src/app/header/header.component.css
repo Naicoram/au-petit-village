@@ -1,7 +1,4 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 2%;
     border: 20px solid #FDD90B;
 }
@@ -16,6 +13,13 @@ header a img{
 
 header a img:hover{
     transform: scale(1.1);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {

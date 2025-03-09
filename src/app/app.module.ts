@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchByNamePipe } from './search-by-name.pipe';
+import { FormsModule } from '@angular/forms';
+import { SortByPricePipe } from './sort-by-price.pipe';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     HomeComponent,
     ProductComponent,
-    AboutComponent
+    AboutComponent,
+    SearchByNamePipe,
+    SortByPricePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

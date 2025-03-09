@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Product, ProductsService } from '../products.service';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -16,7 +16,7 @@ export class ProductComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const id: number = Number(this.route.snapshot.queryParamMap.get('id'));
+    const id: number = Number(this.route.snapshot.paramMap.get('id'));
     this.productsService.getAllProducts().subscribe((obtainedProducts: Product[]) => {
       this.product = obtainedProducts.filter((obtainedProduct: Product) => obtainedProduct.id === id)[0];
       this.isLoaded = true;
